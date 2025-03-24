@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Action attribute is used to define what action needs to be performed when a form is submitted
+    or where the form data should be sent -->
+    <form action="/action">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="username" id="username" name="user">
+        </div>
+
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="password" id="password" name="pass">
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="number" id="age">
+        </div>
+        
+        <br>
+        <hr>
+
+        Time:
+        <input type="time" placeholder="time">
+        <br>
+        Color:
+        <input type="color" placeholder="color">
+        <br>
+        <hr>
+
+        <button>Submit</button>
+        <br>
+        <button type="button">Hello</button>
+        <br>
+        <button type="reset">Reset</button>
+        <br>
+        <hr>
+    </form>
+
+    <form action="https://www.youtube.com/results?" target="main">
+        <input type="text" placeholder="search" name="search_query">
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <br>
+    <form action="/server" target="main">
+        <input type="checkbox" id="check" name="age">
+        <label for="age">I'm 18+</label>
+    <br>
+    <br>
+        <div>Choose your favourite fruit:
+            <br>
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" id="mango" name="fruit" value="mango">
+            <label for="mango">Mango</label>
+            <input type="radio" id="banana" name="fruit" value="banana">
+            <label for="banana">Banana</label>
+        </div>
+    <br>
+        <div>Choose your subject:
+            <br>
+            <input type="checkbox" id="math" name="sub" value="math">
+            <label for="math">Math</label>
+            <input type="checkbox" id="sub" name="sub" value="sci">
+            <label for="science">Science</label>
+            <input type="checkbox" id="english" name="sub" value="eng">
+            <label for="english">English</label>
+        </div>
+    <br>
+    <div>Choose your profession:
+    <br>
+        <select name="profession" id="profession">
+            <option value="std">Student</option>
+            <option value="dev" selected>Developer</option>
+            <option value="mech">Mechanic</option>
+            <option value="teacher">Teacher</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="vol">Select your volume level :</label>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10">
+    </div>
+    <br>
+
+    <label for="feedback">Please provide ur feedback:</label>
+    <br>    
+    <textarea id="feedback" placeholder="give feedback" name="feedback" rows="3 " column="6"></textarea>
+    <br>
+
+    <hr>
+    <button>submit</button>
+    </form>
+</body>
+</html>
